@@ -9,5 +9,7 @@
 #import "CCSprite.h"
 
 @interface Ball : CCSprite
+@property int vx;
+@property int vy;
 
 @end

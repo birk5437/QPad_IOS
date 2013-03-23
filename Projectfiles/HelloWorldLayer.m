@@ -8,6 +8,7 @@
 #import "HelloWorldLayer.h"
 #import "Ball.h"
 Ball *ball;
+CGSize winSize;
 
 @interface HelloWorldLayer (PrivateMethods)
 @end
@@ -16,17 +17,22 @@ Ball *ball;
 
 -(id) init {
   if ((self = [super init])) {
-    glClearColor(0.1f, 0.1f, 0.3f, 1.0f);
+
+     winSize = [CCDirector sharedDirector].winSize;
+
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
     ball = [Ball spriteWithFile: @"ball.png"];
-    ball.position = ccp(50, 200);
+    ball.position = ccp(55, 50);
+    ball.vx = 100;
+    ball.vy = 100;
     [self addChild:ball];
 
     // "empty" as in "minimal code & resources"
-    CCLabelTTF* label = [CCLabelTTF labelWithString:@"Minimal Kobold2D Project" fontName:@"Arial" fontSize:20];
-    label.position = [CCDirector sharedDirector].screenCenter;
-    label.color = ccCYAN;
-    [self addChild:label];
+    //CCLabelTTF* label = [CCLabelTTF labelWithString:@"Minimal Kobold2D Project" fontName:@"Arial" fontSize:20];
+    //label.position = [CCDirector sharedDirector].screenCenter;
+    //label.color = ccCYAN;
+    //[self addChild:label];
 
     [self scheduleUpdate];
   }
@@ -34,7 +40,13 @@ Ball *ball;
 }
 
 - (void) update:(ccTime)dt {
-  ball.position = ccp( ball.position.x + 100*dt, ball.position.y );
+  if (ball.position.x > winSize.width || ball.position.x <= 0) {
+    ball.vx *= -1;
+  }
+  if (ball.position.y > winSize.height || ball.position.y <= 0) {
+    ball.vy *= -1;
+  }
+  ball.position = ccp( ball.position.x + ball.vx*dt, ball.position.y + ball.vy*dt );
 }
 
 @end

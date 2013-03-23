@@ -10,6 +10,9 @@
 
 @implementation Ball
 
+@synthesize vx;
+@synthesize vy;
+
 -(id) initWithBallImage {
   // This calls CCSprite's init. Basically this init method does everything CCSprite's init method does and then more
   if ((self = [super initWithFile:@"ball.png"])){
