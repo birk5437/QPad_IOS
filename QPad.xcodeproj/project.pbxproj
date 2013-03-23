@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		82396E2116FA9AE100246899 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 82396E2016FA9AE100246899 /* ball.png */; };
+		82B6E8D116FE1B8E002EA13D /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B6E8D016FE1B8E002EA13D /* Ball.m */; };
+		82B6E8D216FE1B8E002EA13D /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B6E8D016FE1B8E002EA13D /* Ball.m */; };
+		82B6E8D516FE20FE002EA13D /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B6E8D416FE20FE002EA13D /* ball.png */; };
+		82B6E8D616FE20FE002EA13D /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B6E8D416FE20FE002EA13D /* ball.png */; };
 		DC21B88B1511078F00FD4891 /* fps_images-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8881511078F00FD4891 /* fps_images-hd.png */; };
 		DC21B88C1511078F00FD4891 /* fps_images-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */; };
 		DC21B88D1511078F00FD4891 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = DC21B88A1511078F00FD4891 /* fps_images.png */; };
@@ -52,7 +55,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		82396E2016FA9AE100246899 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ball.png; path = ../../../../../Desktop/ball.png; sourceTree = "<group>"; };
+		82B6E8CF16FE1B8E002EA13D /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
+		82B6E8D016FE1B8E002EA13D /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
+		82B6E8D416FE20FE002EA13D /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = SOURCE_ROOT; };
 		DC21B8881511078F00FD4891 /* fps_images-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-hd.png"; sourceTree = "<group>"; };
 		DC21B8891511078F00FD4891 /* fps_images-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-ipadhd.png"; sourceTree = "<group>"; };
 		DC21B88A1511078F00FD4891 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
@@ -234,6 +239,8 @@
 				DCC1A38E13A94F1A005BD75D /* AppDelegate.m */,
 				DCC1A39413A94F1A005BD75D /* Resources */,
 				DCC1A3CF13A94F2C005BD75D /* Supporting Files */,
+				82B6E8CF16FE1B8E002EA13D /* Ball.h */,
+				82B6E8D016FE1B8E002EA13D /* Ball.m */,
 			);
 			path = Projectfiles;
 			sourceTree = "<group>";
@@ -241,7 +248,7 @@
 		DCC1A39413A94F1A005BD75D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				82396E2016FA9AE100246899 /* ball.png */,
+				82B6E8D416FE20FE002EA13D /* ball.png */,
 				DCC1A39513A94F1A005BD75D /* config.lua */,
 			);
 			path = Resources;
@@ -352,7 +359,7 @@
 				DC21B88D1511078F00FD4891 /* fps_images.png in Resources */,
 				DC27219F160CADFF00D88944 /* Default-568h@2x.png in Resources */,
 				DC2721A8160CAFA600D88944 /* iTunesArtwork in Resources */,
-				82396E2116FA9AE100246899 /* ball.png in Resources */,
+				82B6E8D516FE20FE002EA13D /* ball.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +372,7 @@
 				DCC1A27013A94EE6005BD75D /* icon.icns in Resources */,
 				DCC1A3B013A94F1A005BD75D /* config.lua in Resources */,
 				DC21B88F1511079900FD4891 /* fps_images.png in Resources */,
+				82B6E8D616FE20FE002EA13D /* ball.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +386,7 @@
 				DCC1A3A913A94F1A005BD75D /* AppDelegate.m in Sources */,
 				DCC1A3AB13A94F1A005BD75D /* HelloWorldLayer.m in Sources */,
 				DCC1A3AD13A94F1A005BD75D /* main.m in Sources */,
+				82B6E8D116FE1B8E002EA13D /* Ball.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +397,7 @@
 				DCC1A3AA13A94F1A005BD75D /* AppDelegate.m in Sources */,
 				DCC1A3AC13A94F1A005BD75D /* HelloWorldLayer.m in Sources */,
 				DCC1A3AE13A94F1A005BD75D /* main.m in Sources */,
+				82B6E8D216FE1B8E002EA13D /* Ball.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

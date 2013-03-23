@@ -6,7 +6,8 @@
  */
 
 #import "HelloWorldLayer.h"
-CCSprite *ball;
+#import "Ball.h"
+Ball *ball;
 
 @interface HelloWorldLayer (PrivateMethods)
 @end
@@ -17,7 +18,7 @@ CCSprite *ball;
   if ((self = [super init])) {
     glClearColor(0.1f, 0.1f, 0.3f, 1.0f);
 
-    ball = [CCSprite spriteWithFile: @"ball.png"];
+    ball = [Ball spriteWithFile: @"ball.png"];
     ball.position = ccp(50, 200);
     [self addChild:ball];
 
